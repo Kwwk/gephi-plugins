@@ -8,7 +8,6 @@ import org.gephi.utils.progress.ProgressTicket;
 import org.openide.util.Lookup;
 
 import java.util.*;
-import java.util.stream.IntStream;
 
 
 public class Beetweness extends Centrality implements Statistics, LongTask {
@@ -98,42 +97,6 @@ public class Beetweness extends Centrality implements Statistics, LongTask {
 
         }
     }
-
-//
-//    public HashMap<Integer,Double> getNodesFromCentrality(String value){
-//        HashMap<Integer,Double> results = new HashMap<>();
-//        double valueNode[]={0};
-//        int node[]={0};
-//            IntStream.range(0, this.betweenness.length-1).parallel().
-//                    reduce((a,b)->this.betweenness[a]<this.betweenness[b]? b: a).
-//                    ifPresent(ix -> {
-//                        results.put(ix,this.betweenness[ix]) ;
-//                        valueNode[0] = this.betweenness[ix];
-//                        node[0] = ix;
-//                    } );
-//
-//           for(int i=0; i<betweenness.length;i++){
-//               if(valueNode[0] == betweenness[i] && node[0]!=i){
-//                    results.put(i,betweenness[i]);
-//               }
-//           }
-//
-//        return results;
-//    }
-//
-//
-//    public void setAttributeForNodes(){
-//        int i[] = {0};
-//        Arrays.stream(graph.getNodes().toArray()).forEach(a->{
-//            a.setAttribute(Resources.NAME_BETWEENESS,betweenness[i[0]]);
-//            i[0]++;
-//        });
-//    }
-
-    /**
-     *
-     * @return
-     */
 
     @Override
     public String getReport() {

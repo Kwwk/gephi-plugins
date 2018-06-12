@@ -8,9 +8,7 @@ public class Resources {
             "paths between the node and all other nodes in the graph.";
     public static final String SHORT_DESCRIPTION_BETWEENESS = "The betweenness centrality for each vertex is the number " +
             "of these shortest paths that pass through the vertex.";
-//    private static final String ATTRIBUTE_BETWEENNESS = "Betweenness";
     public static final String BETWEENNESS = "Betweeness Centrality";
-//    private static final String ATTRIBUTE_CLOSENESS = "Closeness";
     public static final String CLOSENESS = "Closness Cntrality";
     public static final String DEGREE_CENTRALITY = "Degree Centrality";
 

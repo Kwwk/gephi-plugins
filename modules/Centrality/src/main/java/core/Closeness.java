@@ -8,7 +8,6 @@ import org.gephi.utils.progress.ProgressTicket;
 import org.openide.util.Lookup;
 
 import java.util.*;
-import java.util.stream.IntStream;
 
 
 public class Closeness extends Centrality implements Statistics, LongTask {
@@ -97,45 +96,6 @@ public class Closeness extends Centrality implements Statistics, LongTask {
         return nodeCloseness;
     }
 
-
-
-
-//    public HashMap<Integer,Double> getNodesFromCentrality(String value){
-//        HashMap<Integer,Double> results = new HashMap<>();
-//        double valueNode[]={0};
-//        int node[]={0};
-//        IntStream.range(0, this.closeness.length-1).parallel().
-//                reduce((a,b)->this.closeness[a]<this.closeness[b]? b: a).
-//                ifPresent(ix -> {
-//                    results.put(ix,this.closeness[ix]) ;
-//                    valueNode[0] = this.closeness[ix];
-//                    node[0] = ix;
-//
-//                } );
-//
-//        for(int i=0; i<closeness.length;i++){
-//            if(valueNode[0] == closeness[i] && node[0]!=i){
-//                results.put(i,closeness[i]);
-//            }
-//        }
-//
-//
-//        return results;
-//    }
-
-
-//    public void setAttributeForNodes(){
-//        int i[] = {0};
-//        Arrays.stream(graph.getNodes().toArray()).forEach(a->{
-//            a.setAttribute(Resources.NAME_CLOSENESS,closeness[i[0]]);
-//            i[0]++;
-//        });
-//    }
-
-    /**
-     *
-     * @return
-     */
 
 
     @Override
